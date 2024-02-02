@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* width: 100%;
+    height: 100vh; */
+    background: linear-gradient(rgba(4, 9, 20, 0.8), rgba(4, 9, 20, 0.5)), url('./images/register.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form {
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    box-shadow: 0 0  9px rgb(202, 199, 199);
+    border-radius: 5px;
+    padding-bottom: 20px;
+    /* margin-bottom: 100%; */
+    /* background-color: #f9f9f9; */
+}
+
+.register-form h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.register-form h1::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+
+.register-form:hover h1::after{
+    width: 400px;
+}
+
+.register-form #regForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.register-form #regForm label{
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 3px;
+}
+
+.register-form #regForm .inp{
+    width: 300px;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: 0;
+    color: #ccc;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.register-form #regForm #bikash{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.register-form #regForm .inp::placeholder{
+    color: #ccc;
+}
+
+.register-form #regForm #btn{
+    /* margin-bottom: 5px; */
+    margin-top: 12px;
+    font-size: 17px;
+    padding: 4px;
+    width: 15%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.register-form #regForm #btn:hover{
+    box-shadow: 0 0 0.5 white;
+}
+
+/* .register-form #regForm #trid{
+    margin-top: -10px;
+} */
+
+@media (max-width: 700px){
+    .register-form {
+        width: 90%; /* Adjust the width for smaller screens */
+        /* margin: 10px; */
+        /* margin-bottom: 50px; */
+    }
+    .register-form h1{
+        font-size: 25px;
+    }
+    .register-form #regForm label{
+        font-size: 20px;
+    }
+    .register-form h1::after{
+        content: '';
+        display: block;
+        width: 90%;
+        height: 3px;
+        background-color: #fff;
+        margin: 10px auto;
+        transition: 0.5s;
+    }
+    .register-form:hover h1::after{
+        width: 90%;
+    }
+    .register-form #regForm .inp{
+        width: 90%;
+    }
+    .register-form #regForm #btn{
+        width: 50%;
+    }
+}

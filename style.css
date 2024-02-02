@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(./images/banner.jpeg);
+    /* background-color: rgb(202, 202, 202); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav i{
+    font-size: 40px;   
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav i::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-left: -8px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+nav i:hover::after{
+    width: 150%;
+}
+
+.nav-links{
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    /* margin: 0 5px; */
+    margin-right: 20px;
+}
+
+.nav-links ul li a{
+    -webkit-tap-highlight-color: transparent;
+}
+.nav-links a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-left: -8px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.nav-links a:hover::after{
+    width: 130%;
+}
+
+.header nav .fa-bars{
+    display: none;
+}
+
+.header nav .nav-links .fa-xmark {
+    display: none;
+}
+
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+}
+
+.text-box h1{
+    position: relative;
+    top: -100px;
+    font-size: 75px;
+    transition: all 0.5s;
+}
+
+.text-box h1:hover{
+    transform: scale(1.1);
+}
+
+.text-box p{
+    padding-bottom: 30px;
+    font-size: 27px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.text-box p:hover{
+    transform: scale(1.1);
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 23px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 60px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #d83920;
+    transition: 1s;
+}
+
+.Services{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.Services h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.Services p{
+    color: rgb(34, 34, 34);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-bottom: 20px;    
+    margin-top: 10px;
+}
+
+.Services p br{
+    position: absolute;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.Services #ph{
+    display: none;
+}
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.service-col{
+    flex-basis: 31%;
+    background-color: #f3e3dc;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin: 20px 10px;
+}
+
+.service-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 5px ;
+}
+
+.service-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2 );
+}
+
+.service-col ul{
+    position: relative;
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.rouls{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    position: relative;
+}
+
+.rouls h3{
+    font-size: 30px;
+}
+
+.rouls ul{
+    position: relative;
+    /* display: block; */
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.rouls ul li{
+    display: block;
+
+    flex-basis: 31%;
+    background-color: #f3e3dc;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin: 20px 10px;
+
+
+}
+.rouls ul li::before {
+    content: '\2022'; /* Use bullet point or any other symbol for list item marker */
+    color: #000; /* Set the color */
+    display: inline-block;
+    width: 1em; /* Adjust the width or padding as needed */
+    margin-left: 2px; /* Adjust position */
+}
+
+.row .fee{
+    color: #000;
+    text-align: center;
+    /* justify-content: center; */
+    margin-top: 30px;
+    padding-bottom: 0;
+}
+
+.contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.contact h3{
+    font-size: 35px;
+}
+
+.contact #contactForm{
+    display: block;
+    flex-basis: 31%;
+    background-color: #f3e3dc;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin: 20px 10px;
+}
+
+.contact #contactForm label{
+    /* position: absolute; */
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contact #contactForm input[type="text"]{
+    background-color: transparent;
+    border: 1px solid #171515;
+    flex: 1;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.contact #contactForm input[type="text"]::placeholder{
+    padding-left: 10px;
+    color: black;
+}
+
+
+.contact #contactForm input[type="text"]:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2 );
+}
+
+.contact #contactForm #submitbtn{
+    background-color: #1c1515;
+    border: 1px solid #171515;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact #contactForm #submitbtn:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2 );
+}
+
+.contact #contactForm #submitbtn:focus{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2 );
+}
+
+.contact #contactForm #result{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(4, 75, 4);
+}
+
+
+@media (max-width: 700px) {
+    .nav-links ul li{
+        display: block;
+        margin-top: 15px;
+        
+    }
+
+    .nav-links{
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        /* display: none; */
+        transition: 1s;
+        
+    }
+
+    .nav-links .fa-solid{
+        color: black;
+    }
+
+    nav .fa-solid{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    nav a .fa-utensils{
+        margin-top: 20px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .nav-links ul li a{
+        color: black;
+        font-size: 25px;
+        margin-right: 5%;
+    }
+
+    .nav-links a:hover::after{
+        width: 130%;
+        color: black;
+    }
+
+    nav .fa-bars{
+        color: white;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .header nav .fa-bars{
+        display: inline-block;
+    }
+    
+    .header nav .nav-links .fa-xmark {
+        display: inline-block;
+    }
+    
+
+    .text-box h1{
+        position: relative;
+        top: -20px;
+        font-size: 62px;
+    }
+
+    .text-box p{
+        margin: 0px 0 5px;
+        font-size: 17px;
+        color: #fff;
+    }
+
+    .hero-btn{
+        margin-top: 10px;
+    }
+
+    .Services #pc{
+        display: none;
+    }
+
+    .Services #ph{
+        display: block;
+        
+    }
+
+    .row{
+        display: block;
+    }
+
+    .contact #contactForm #submitbtn{
+        font-size: 15px;
+        padding: 9px 14px;
+    }
+
+}

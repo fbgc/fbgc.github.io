@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ঘরোয়া রান্না সহজ রেসিপি - register</title>
+    <link rel="icon" type="image/jpeg" href="https://png.pngtree.com/png-vector/20220727/ourmid/pngtree-cooking-logo-png-image_6089722.png">
+    <meta property="og:description" content="Register to ঘরোয়া রান্না সহজ রেসিপি">
+    <meta property="og:image" content="https://png.pngtree.com/png-vector/20220727/ourmid/pngtree-cooking-logo-png-image_6089722.png">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <section class="header">
+        <div class="register-form">
+            <h1>Register Form</h1>
+            <form id="regForm" >
+
+                <label for="fbid">Facebook Id Name :</label>
+                <input class="inp" type="Name"  id="name" placeholder="Enter you name..." spellcheck="false" required>
+
+                <label for="fbidlink">Facebook Id Lin :k</label>
+                <input class="inp" type="text" id="fblink" required placeholder="facebook id link..." spellcheck="false">
+
+                <label for="pagelink">Facebook Page link :</label>
+                <input class="inp" type="text" id="pagelink" placeholder="facebook page link..." spellcheck="false">
+
+                <label for="package">Select package :</label>
+                <select name="pack" id="pack">
+                    <option value="1 month">1 Month</option>
+                    <option value="3 month">3 Month</option>
+                    <option value="6 month">6 Month</option>
+                    <option value="1 year">1 Year</option>
+
+                </select>
+
+                <label for="numbers" id="bikash">Bikash : <br> 01911706401 <br> 01841445428</label>
+
+                <label for="imageUpload">Select payment scrinshort :</label>
+                    <input class="inp" type="file" id="imageUpload" name="imageUpload" accept="image/*">
+                    <br>
+                    <img id="selectedImage" src="#" alt="Selected Image" style="display:none; max-width: 300px; max-height: 300px;">
+
+                <label for="bksid">Enter Bikash TrId :</label>
+                <input class="inp" type="text"  id="pymentid" placeholder="TrId.."spellcheck="false">
+
+                <input type="submit" id="btn">
+            </form>
+        </div>
+    </section>
+    <script src="submit.js"></script>
+</body>
+</html>
